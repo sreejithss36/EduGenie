@@ -1,0 +1,15 @@
+EduGenie: Google Gemini Powered Learning Assistant
+
+Purpose: Help students understand topics through structured learning modes.
+
+Features:
+- Topic-based learning
+- Learning level selection
+- Explanation
+- Study Notes
+- Quiz
+- Step-by-Step learning
+
+Technology: Python, FastAPI, Jinja2, HTML, CSS
+
+The project runs locally without an API key. A Gemini API integration can be added later in app/gemini_service.py.

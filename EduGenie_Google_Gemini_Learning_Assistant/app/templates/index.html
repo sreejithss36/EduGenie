@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}EduGenie - Learning Assistant{% endblock %}
+{% block content %}
+<section class="hero">
+<h2>Learn smarter with EduGenie</h2>
+<p>Choose a topic, learning level, and learning style.</p>
+</section>
+<section class="card">
+<h2>Start Learning</h2>
+<form method="post" action="/learn">
+<label>Topic</label>
+<input type="text" name="topic" required placeholder="Example: Photosynthesis">
+<label>Learning Level</label>
+<select name="level" required>
+<option>Beginner</option><option>Intermediate</option><option>Advanced</option>
+</select>
+<label>Learning Mode</label>
+<select name="mode" required>
+<option>Explanation</option><option>Study Notes</option><option>Quiz</option><option>Step-by-Step</option>
+</select>
+<label>What do you want to learn?</label>
+<textarea name="question" rows="7" required placeholder="Ask a question or describe what you want to understand..."></textarea>
+<button type="submit">Generate Learning Help</button>
+</form>
+</section>
+<section class="features">
+<div class="feature"><h3>📚 Learn</h3><p>Get structured explanations and study notes.</p></div>
+<div class="feature"><h3>🧠 Practice</h3><p>Use quiz mode to test your understanding.</p></div>
+<div class="feature"><h3>🔎 Revise</h3><p>Break difficult topics into manageable steps.</p></div>
+</section>
+{% endblock %}

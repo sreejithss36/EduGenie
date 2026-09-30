@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}EduGenie Result{% endblock %}
+{% block content %}
+<section class="card">
+<p class="eyebrow">LEARNING SESSION</p>
+<h2>{{ topic }}</h2>
+<div class="tags"><span>{{ level }}</span><span>{{ mode }}</span></div>
+<p><strong>Your question:</strong> {{ question }}</p>
+</section>
+<section class="card"><h2>EduGenie Response</h2><pre>{{ response }}</pre></section>
+<a class="button" href="/">Ask Another Question</a>
+{% endblock %}
